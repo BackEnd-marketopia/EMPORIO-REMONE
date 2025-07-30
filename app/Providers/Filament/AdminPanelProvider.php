@@ -32,7 +32,7 @@ class AdminPanelProvider extends PanelProvider
             ->path('admin')
             ->login()
             ->colors([
-                'primary' => Color::Purple,
+                'primary' => "#FFBF00",
                 'secondary' => Color::Gray,
                 'info' => Color::Cyan,
                 'success' => Color::Green,
@@ -76,8 +76,9 @@ class AdminPanelProvider extends PanelProvider
             ->profile()
             ->sidebarCollapsibleOnDesktop()
             ->globalSearch(false)
-            // ->brandLogo(asset('storage/images/default.png'))
+            ->brandLogo(asset('assets/img/logo.png'))
             ->brandLogoHeight("50px")
+            ->favicon('assets/img/logo.png')
             ->renderHook(
                 'panels::body.start',
                 fn() => view('filament.pages.firebase-script')
