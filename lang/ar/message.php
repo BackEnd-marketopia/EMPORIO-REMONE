@@ -330,4 +330,5 @@ return [
     'Invalid Status Change' => 'تغيير الحالة غير صالح',
     'Invalid Status' => 'حالة غير صالحة',
     'Address Added' => 'تم إضافة العنوان',
+    'EMPORIO REMONE' => 'EMPORIO REMONE',
 ];
